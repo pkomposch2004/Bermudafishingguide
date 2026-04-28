@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #020617; color: white; }
+a { color: inherit; text-decoration: none; }
+.site { min-height: 100vh; background: #020617; }
+.header { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid rgba(255,255,255,.1); background: rgba(2,6,23,.82); backdrop-filter: blur(18px); }
+.headerInner, .container, .footerInner { max-width: 1180px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+.headerInner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brandIcon { width: 42px; height: 42px; border-radius: 18px; display: grid; place-items: center; background: #22d3ee; color: #020617; box-shadow: 0 16px 35px rgba(34,211,238,.24); }
+.brandName { margin: 0; font-size: 18px; font-weight: 900; letter-spacing: -.03em; }
+.brandSub { margin: 2px 0 0; color: rgba(207,250,254,.8); font-size: 11px; text-transform: uppercase; letter-spacing: .24em; }
+.nav { display: flex; gap: 30px; color: #e2e8f0; font-size: 14px; }
+.nav a:hover, .footer a:hover { color: #67e8f9; }
+.bookSmall { display: inline-flex; align-items: center; justify-content: center; background: #22d3ee; color: #020617; font-weight: 800; border-radius: 999px; padding: 12px 20px; }
+.mobileMenu { display: none; }
+.hero { position: relative; overflow: hidden; background: radial-gradient(circle at top left, rgba(34,211,238,.35), transparent 34%), linear-gradient(135deg, #020617 0%, #0f766e 48%, #0369a1 100%); }
+.gridOverlay { position: absolute; inset: 0; opacity: .28; background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px); background-size: 48px 48px; }
+.heroInner { position: relative; max-width: 1180px; margin: 0 auto; padding: 96px 24px 116px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(207,250,254,.35); background: rgba(255,255,255,.12); color: #cffafe; border-radius: 999px; padding: 10px 16px; backdrop-filter: blur(10px); }
+h1, h2, h3 { margin: 0; letter-spacing: -.05em; line-height: 1.02; }
+h1 { margin-top: 24px; font-size: clamp(48px, 7vw, 82px); font-weight: 950; }
+h2 { font-size: clamp(36px, 5vw, 58px); font-weight: 950; }
+h3 { font-size: 26px; font-weight: 950; }
+.heroText { margin: 24px 0 0; max-width: 610px; color: rgba(240,253,250,.92); font-size: 19px; line-height: 1.75; }
+.heroButtons { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
+.centered { justify-content: center; }
+.button { display: inline-flex; align-items: center; gap: 10px; justify-content: center; min-height: 52px; border-radius: 999px; padding: 0 28px; font-weight: 900; background: #22d3ee; color: #020617; transition: .2s ease; }
+.button:hover { transform: translateY(-2px); background: #67e8f9; }
+.buttonOutline { border: 1px solid rgba(255,255,255,.32); background: rgba(255,255,255,.1); color: white; }
+.buttonOutline:hover { background: rgba(255,255,255,.18); }
+.heroCardWrap { position: relative; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.1); border-radius: 36px; padding: 16px; box-shadow: 0 30px 90px rgba(2,6,23,.4); backdrop-filter: blur(10px); }
+.heroPhoto { aspect-ratio: 4/5; border-radius: 28px; background: linear-gradient(rgba(2,6,23,.05), rgba(2,6,23,.65)), url('https://images.unsplash.com/photo-1530673545624-0b667a216d70?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; }
+.floatCard { position: absolute; left: 34px; bottom: -26px; display: flex; align-items: center; gap: 16px; max-width: 330px; border: 1px solid rgba(255,255,255,.2); background: rgba(2,6,23,.92); border-radius: 26px; padding: 18px; box-shadow: 0 24px 60px rgba(2,6,23,.45); }
+.floatIcon { background: rgba(34,211,238,.18); color: #a5f3fc; border-radius: 18px; padding: 12px; }
+.floatCard p { margin: 0; font-weight: 900; }
+.floatCard span { color: #cbd5e1; font-size: 14px; }
+.highlights { max-width: 1180px; margin: 0 auto; padding: 64px 24px; display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); }
+.highlight { display: flex; align-items: center; gap: 12px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.045); border-radius: 20px; padding: 18px; color: #f8fafc; }
+.highlight svg { color: #67e8f9; flex: none; }
+.trips { background: white; color: #020617; padding: 86px 0; }
+.sectionIntro { max-width: 680px; }
+.sectionIntro > p:last-child, .aboutText > p, .bookBox p { color: #475569; font-size: 18px; line-height: 1.75; }
+.eyebrow { margin: 0 0 14px; color: #67e8f9; font-size: 13px; font-weight: 950; text-transform: uppercase; letter-spacing: .25em; }
+.eyebrow.dark { color: #0e7490; }
+.tripGrid, .reviewGrid { margin-top: 42px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tripCard { background: white; border: 1px solid #e2e8f0; border-radius: 28px; padding: 30px; box-shadow: 0 20px 45px rgba(15,23,42,.08); transition: .2s ease; }
+.tripCard:hover { transform: translateY(-4px); box-shadow: 0 30px 65px rgba(15,23,42,.12); }
+.cardIcon { width: 54px; height: 54px; border-radius: 20px; display: grid; place-items: center; background: #cffafe; color: #0e7490; margin-bottom: 24px; }
+.tripCard p { color: #475569; line-height: 1.7; }
+.tripMeta { border-top: 1px solid #e2e8f0; margin-top: 24px; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.tripMeta span { display: flex; gap: 8px; align-items: center; color: #475569; font-weight: 700; font-size: 14px; }
+.tripMeta strong { color: #0e7490; font-size: 18px; }
+.about { padding-top: 96px; padding-bottom: 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.aboutPhoto { min-height: 480px; border-radius: 36px; background: linear-gradient(rgba(2,6,23,.2), rgba(2,6,23,.65)), url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; }
+.aboutText > p { color: #cbd5e1; }
+.stats { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.stats div { border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.045); border-radius: 26px; padding: 22px; }
+.stats strong { display: block; color: #67e8f9; font-size: 34px; line-height: 1; }
+.stats span { display: block; margin-top: 8px; color: #cbd5e1; }
+.reviews { background: #ecfeff; color: #020617; padding: 86px 0; }
+.centerIntro { text-align: center; }
+.reviewCard { background: white; border: 1px solid #cffafe; border-radius: 28px; padding: 30px; box-shadow: 0 15px 40px rgba(14,116,144,.08); }
+.stars { display: flex; gap: 4px; color: #f59e0b; margin-bottom: 18px; }
+.reviewCard p { color: #334155; line-height: 1.7; }
+.reviewCard strong { color: #020617; }
+.bookSection { position: relative; overflow: hidden; padding: 96px 24px; background: radial-gradient(circle at center, rgba(34,211,238,.24), transparent 36%); }
+.bookBox { max-width: 860px; margin: 0 auto; text-align: center; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.06); border-radius: 36px; padding: 52px 32px; box-shadow: 0 30px 90px rgba(2,6,23,.28); }
+.bookBox svg { color: #67e8f9; }
+.bookBox h2 { margin-top: 18px; }
+.bookBox p { margin: 22px auto 0; max-width: 680px; color: #cbd5e1; }
+.footer { border-top: 1px solid rgba(255,255,255,.1); padding: 34px 0; }
+.footerInner { display: flex; justify-content: space-between; align-items: center; gap: 24px; color: #94a3b8; font-size: 14px; }
+.footerInner p { margin: 0; }
+.footerInner div { display: flex; flex-wrap: wrap; gap: 20px; }
+@media (max-width: 900px) {
+  .nav, .bookSmall { display: none; }
+  .mobileMenu { display: block; }
+  .heroInner, .about { grid-template-columns: 1fr; }
+  .highlights, .tripGrid, .reviewGrid { grid-template-columns: 1fr; }
+  .heroInner { padding-top: 66px; }
+  .footerInner { align-items: flex-start; flex-direction: column; }
+}
