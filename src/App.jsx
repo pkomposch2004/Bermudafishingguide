@@ -21,7 +21,7 @@ const trips = [
     price: 'From $500',
     description: 'Learning to troll while targeting tuna and wahoo',
   },
-{
+  {
     title: 'Full-Day offshore trip',
     time: '10 hours',
     price: 'From $800',
