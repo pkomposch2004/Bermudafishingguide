@@ -13,6 +13,7 @@ const trips = [
     title: 'Full-Day inshore trip',
     time: '7 hours',
     price: 'From $600',
+    image: '/snapper.jpg',
     description: 'Fish multiple inshore spots targeting snapper, bonita, and jacks while learning the inshore fishery',
   },
   {
@@ -25,6 +26,7 @@ const trips = [
     title: 'Full-Day offshore trip',
     time: '10 hours',
     price: 'From $800',
+    image: '/wahoo.jpg',
     description: 'Fishing the edge and or the bank targeting tuna and wahoo while learning multiple methods of fishing',
   },
 ]
