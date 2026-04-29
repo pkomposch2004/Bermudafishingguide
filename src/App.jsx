@@ -21,13 +21,13 @@ const trips = [
     price: 'From $500',
     description: 'Learning to troll while targeting tuna and wahoo',
   },
-]{
+{
     title: 'Full-Day offshore trip',
     time: '10 hours',
     price: 'From $800',
     description: 'Fishing the edge and or the bank targeting tuna and wahoo while learning multiple methods of fishing',
   },
-
+]
 const highlights = [
   'Local Bermuda captain',
   'All bait & tackle included',
