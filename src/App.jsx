@@ -88,7 +88,7 @@ export default function App() {
           <div className="heroInner">
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="pill"><MapPin size={16} /> Based out of beautiful Bermuda</div>
-              <h1>Fish Bermuda’s blue water with a true local guide.</h1>
+              <h1>Fish Bermuda’s blue water with a true local guide from the comfort of your own boat.</h1>
               <p className="heroText"> Professional guide service designed to teach you how to fish your own boat, covering everything from the basics of leaving the dock to cleaning your catch for the dinner table.</p>
               <div className="heroButtons">
                 <Button href="#book">Check Availability</Button>
