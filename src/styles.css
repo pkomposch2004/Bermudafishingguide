@@ -44,7 +44,32 @@ h3 { font-size: 26px; font-weight: 950; }
 .eyebrow { margin: 0 0 14px; color: #67e8f9; font-size: 13px; font-weight: 950; text-transform: uppercase; letter-spacing: .25em; }
 .eyebrow.dark { color: #0e7490; }
 .tripGrid, .reviewGrid { margin-top: 42px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.tripCard { background: white; border: 1px solid #e2e8f0; border-radius: 28px; padding: 30px; box-shadow: 0 20px 45px rgba(15,23,42,.08); transition: .2s ease; }
+.tripCard {
+  min-height: 360px;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  padding: 30px;
+  box-shadow: 0 20px 45px rgba(15,23,42,.08);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #0f172a;
+
+  color: white;
+  overflow: hidden;
+}
+.tripCard h3,
+.tripCard p,
+.tripMeta span {
+  color: white;
+}
+.tripMeta {
+  border-top: 1px solid rgba(255,255,255,.35);
+}
+.tripMeta strong {
+  color: #67e8f9;
+}
 .tripCard:hover { transform: translateY(-4px); box-shadow: 0 30px 65px rgba(15,23,42,.12); }
 .cardIcon { width: 54px; height: 54px; border-radius: 20px; display: grid; place-items: center; background: #cffafe; color: #0e7490; margin-bottom: 24px; }
 .tripCard p { color: #475569; line-height: 1.7; }
