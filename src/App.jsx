@@ -7,6 +7,7 @@ const trips = [
     title: 'Half-Day inshore trip',
     time: '4 hours',
     price: 'From $350',
+    image: '/coney.jpg',
     description: 'Learn the basics of inshore fishing',
   },
   {
@@ -20,6 +21,7 @@ const trips = [
     title: 'Half-Day offshore trip',
     time: '5 hours',
     price: 'From $500',
+    image: '/tunass.jpg',
     description: 'Learning to troll while targeting tuna and wahoo',
   },
   {
