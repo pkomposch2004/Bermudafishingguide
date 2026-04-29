@@ -98,7 +98,10 @@ position: relative;
 }
 .tripCard:hover { transform: translateY(-4px); box-shadow: 0 30px 65px rgba(15,23,42,.12); }
 .cardIcon { width: 54px; height: 54px; border-radius: 20px; display: grid; place-items: center; background: #cffafe; color: #0e7490; margin-bottom: 24px; }
-.tripCard p { color: #475569; line-height: 1.7; }
+.tripCard p {
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 2px 10px rgba(0,0,0,.7);
+ line-height: 1.7; }
 .tripMeta { border-top: 1px solid #e2e8f0; margin-top: 24px; padding-top: 20px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
 .tripMeta span { display: flex; gap: 8px; align-items: center; color: #475569; font-weight: 700; font-size: 14px; }
 .tripMeta strong { color: #0e7490; font-size: 18px; }
