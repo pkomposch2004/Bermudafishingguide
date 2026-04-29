@@ -99,7 +99,7 @@ export default function App() {
             <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15 }} className="heroCardWrap">
               <img 
   src="/tuna.jpg" 
-  style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "20px" }} 
+  style={{ width: "100%", height: "400px", objectFit: "cover", borderRadius: "20px" }} 
 />
               <div className="floatCard">
                 <div className="floatIcon"><Waves size={28} /></div>
