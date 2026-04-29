@@ -205,6 +205,14 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <a 
+  href="https://wa.me/14417030960" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="whatsappButton"
+>
+  💬
+</a>
     </div>
   )
 }
