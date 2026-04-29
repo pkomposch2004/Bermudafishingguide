@@ -92,12 +92,15 @@ export default function App() {
               <p className="heroText"> Professional guide service designed to teach you how to fish your own boat, covering everything from the basics of leaving the dock to cleaning your catch for the dinner table.</p>
               <div className="heroButtons">
                 <Button href="#book">Check Availability</Button>
-                <Button href="tel:+14415550192" variant="outline"><Phone size={18} /> Call Now</Button>
+                <Button href="tel:+14417030960" variant="outline"><Phone size={18} /> Call Now</Button>
               </div>
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15 }} className="heroCardWrap">
-              <img src="/tuna.jpg" className="heroPhoto" />
+              <img 
+  src="/tuna.jpg" 
+  style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "20px" }} 
+/>
               <div className="floatCard">
                 <div className="floatIcon"><Waves size={28} /></div>
                 <div>
