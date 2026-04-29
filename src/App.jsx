@@ -65,7 +65,7 @@ export default function App() {
       <header className="header">
         <div className="headerInner">
           <a href="#home" className="brand">
-            <div className="/IMG_5935.jpeg"><Fish size={24} /></div>
+            <div className="/wahoo.jpg"><Fish size={24} /></div>
             <div>
               <p className="brandName">Petes Pro Guide service</p>
               <p className="brandSub">Porfesional fishing guide</p>
@@ -97,7 +97,7 @@ export default function App() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7, delay: 0.15 }} className="heroCardWrap">
-              <div className="/IMG_4984.jpeg" />
+              <div className="/tuna.jpg" />
               <div className="floatCard">
                 <div className="floatIcon"><Waves size={28} /></div>
                 <div>
