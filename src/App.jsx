@@ -205,13 +205,14 @@ export default function App() {
           </div>
         </div>
       </footer>
-      <a 
-  href="https://wa.me/14417030960" 
-  target="_blank" 
+     <a 
+  href="https://wa.me/14417030960?text=Hi%20I’m%20interested%20in%20booking%20a%20fishing%20trip"
+  target="_blank"
   rel="noopener noreferrer"
   className="whatsappButton"
 >
-  💬
+  <span className="whatsappIcon">💬</span>
+  <span className="whatsappText">Chat with us</span>
 </a>
     </div>
   )
