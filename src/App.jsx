@@ -131,7 +131,13 @@ export default function App() {
             </div>
             <div className="tripGrid">
               {trips.map((trip) => (
-                <article key={trip.title} className="tripCard">
+  <article
+    key={trip.title}
+    className="tripCard"
+    style={{
+      backgroundImage: `url(${trip.image})`
+    }}
+  >
                   <div className="cardIcon"><Anchor size={26} /></div>
                   <h3>{trip.title}</h3>
                   <p>{trip.description}</p>
